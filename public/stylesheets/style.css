@@ -1,4 +1,10 @@
 #nav-bar {
     background-color: teal;
     padding: 15px;
+    border: 3px solid teal;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
