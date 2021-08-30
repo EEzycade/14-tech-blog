@@ -29,11 +29,7 @@ Comment.init(
         },
         comment_text: {
             type: DataTypes.STRING,
-            allowNull: false,
-            validate: {
-                // this means the password must be at least four characters long
-                len: [1]
-            }
+            allowNull: false
         }
     },
     {

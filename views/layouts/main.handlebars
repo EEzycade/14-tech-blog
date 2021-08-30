@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cade's Tech Blog</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -19,11 +22,11 @@
             <nav>
                 {{#if loggedIn}}
                 <button id="logout" class="btn-no-style">logout</button>
-                <a href="#">Dashboard</a>
+                <a href="/dashboard">Dashboard</a>
                 {{else}}
                 <a href="/login">Login</a>
                 {{/if}}
-                
+
             </nav>
         </header>
 
@@ -35,6 +38,11 @@
             Created by Cade Ellsworth
         </footer>
     </div>
-    
+
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
+
 </body>
+
 </html>

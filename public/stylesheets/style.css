@@ -8,3 +8,25 @@ a {
     text-decoration: none;
     color: white;
 }
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+ul.post-list {
+    list-style-type: none;
+    padding-left: none !important;
+}
+
+.post {
+    background-color: whitesmoke;
+    border: 3px solid teal;
+    text-decoration: none;
+    color: black;
+    width: 80%;
+}
+
+.title a {
+    color: black;
+}

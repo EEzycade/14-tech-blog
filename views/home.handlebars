@@ -1,1 +1,9 @@
 <h1>Hello, welcome to my blog</h1>
+
+<ul class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        {{> home-post post}}
+    </li>
+    {{/each}}
+</ul>
