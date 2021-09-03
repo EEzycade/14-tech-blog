@@ -6,7 +6,9 @@
     
 This app allows user to share their thoughts on tech. Users can create an account, post their thoughts, and comment on other's posts.
 
-Deployed URL: tbd
+Deployed URL: https://stormy-tor-03376.herokuapp.com/
+
+Note: Does not load on Safari, Chrome recommended
 
 Repo link: https://github.com/EEzycade/14-tech-blog
 
