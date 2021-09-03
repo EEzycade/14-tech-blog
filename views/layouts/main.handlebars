@@ -8,23 +8,21 @@
     <title>Cade's Tech Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
 
         <header id="nav-bar">
-            <h1>
-                <a href="/">Cade's Tech Blog</a>
-            </h1>
             <nav>
+                <a href="/" id="home-link">Cade's Tech Blog</a>
                 {{#if loggedIn}}
-                <button id="logout" class="btn-no-style">logout</button>
-                <a href="/dashboard">Dashboard</a>
+                <button class="btn login-out nav-item" id="logout">Logout</button>
+                <a href="/dashboard" class="nav-item nav-item-normal">Dashboard</a>
                 {{else}}
-                <a href="/login">Login</a>
+                <a href="/login"><button class="btn nav-item login-out">Login</button></a>
                 {{/if}}
 
             </nav>

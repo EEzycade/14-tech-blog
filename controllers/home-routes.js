@@ -70,6 +70,7 @@ router.get('/post/:id', (req, res) => {
         ]
     })
         .then(dbPostData => {
+            console.log(dbPostData.comments);
             if (!dbPostData) {
                 res.status(404).json({ message: 'No post found with this id' });
                 return;

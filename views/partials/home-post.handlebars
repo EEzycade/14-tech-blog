@@ -1,8 +1,9 @@
 <article class="post">
     <div class="title">
-        <h1><a href="/post/{{id}}">{{title}}</a></h1>
-        <p>{{post_content}}</p>
-        <p>Posted: {{format_date created_at}} by {{user.username}}</p>
+        <h1 class="title"><a href="/post/{{id}}">{{title}}</a></h1>
+        <p class="byline">by {{user.username}}</p>
+        <p class="post-content">{{post_content}}</p>
+        <p class="post-content">Posted on {{format_date created_at}} | Click the title to view comments</p>
     </div>
     {{!-- <div class="meta">
         {{vote_count}} point(s) by {{user.username}} on

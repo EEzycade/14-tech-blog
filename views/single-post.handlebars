@@ -3,16 +3,16 @@
 {{#if loggedIn}}
 <form class="comment-form">
     <div>
-        <textarea name="comment-body"></textarea>
+        <textarea name="comment-body" class="form-control"></textarea>
     </div>
 
     <div>
-        <button type="submit">add comment</button>
+        <button type="submit" class="edit-btn btn">Add Comment</button>
     </div>
 </form>
 {{/if}}
 
-{{> comments post.comments }}
+{{> comments }}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>

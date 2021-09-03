@@ -1,32 +1,209 @@
-#nav-bar {
-    background-color: teal;
-    padding: 15px;
-    border: 3px solid teal;
+/* top level styling */
+
+:root {
+    --accent-color: #86C232;
+    --secondary-accent: #61892f;
+    --background-color: #222629;
+    --dark-grey: #474b4f;
+}
+
+body {
+    background-color: var(--background-color);
 }
 
 a {
     text-decoration: none;
-    color: white;
 }
 
-a:hover {
-    text-decoration: none;
-    color: black;
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+/* styling for nav bar  */
+
+.login-out {
+    background-color: var(--accent-color);
+    border-radius: 25px;
+    color: whitesmoke;
+}
+
+.login-out:hover {
+    background-color: whitesmoke;
+    color: var(--accent-color);
+}
+
+.nav-item-normal {
+    margin-top: 15px !important;
+}
+
+.nav-item-normal:hover {
+    color: var(--accent-color);
+}
+
+.nav-item {
+    text-decoration: none;
+    float: right;
+    color: whitesmoke;
+    margin: 10px;
+    vertical-align: center;
+}
+
+#nav-bar {
+    background-color: var(--dark-grey);
+    padding: 15px;
+}
+
+#home-link {
+    font-size: 35px;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* styling for posts  */
 
 ul.post-list {
     list-style-type: none;
-    padding-left: none !important;
+    padding-left: 0px;
 }
 
 .post {
-    background-color: whitesmoke;
-    border: 3px solid teal;
+    padding: 15px;
+    background-color: var(--dark-grey);
     text-decoration: none;
     color: black;
     width: 80%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px;
 }
 
 .title a {
-    color: black;
+    color: whitesmoke;
+}
+
+.byline {
+    color: var(--secondary-accent);
+}
+
+.post-content {
+    color: whitesmoke;
+}
+
+/* styling for dashboard */
+
+#create-post-section {
+    color: whitesmoke;
+    width: 60%;
+    border: 2px solid var(--accent-color);
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#create-post-btn {
+    background-color: var(--accent-color);
+    border-radius: 25px;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.edit-link {
+    color: var(--accent-color);
+    margin: auto;
+    text-align: center;
+}
+
+.edit-link:hover {
+    color: whitesmoke;
+}
+
+#your-posts {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#your-posts ol {
+    list-style: none;
+}
+
+#your-posts li {
+    text-align: left;
+}
+
+/* styling for footer  */
+
+footer {
+    background-color: var(--dark-grey);
+    text-align: center;
+    padding: 10px;
+    color:var(--accent-color);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* styling for edit-post */
+
+#edit-post-div {
+    color: whitesmoke;
+    width: 80%;
+    margin: auto;
+}
+
+#edit-post-div a {
+    color: whitesmoke;
+}
+
+.edit-btn {
+    background-color: var(--accent-color);
+    padding: 10px;
+    margin-top: 10px;
+    color: whitesmoke;
+    border-radius: 25px;
+}
+
+.edit-btn:hover {
+    background-color: var(--secondary-accent);
+    color: whitesmoke;
+}
+
+/* styling for comments  */
+
+.comment-form {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.comments {
+    color: whitesmoke;
+    margin: auto;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.comment-text {
+    font-size: 20px;
+}
+
+.comment-data {
+    color: var(--secondary-accent);
+}
+
+.comment {
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* styling for login page  */
+
+#login-signup-div {
+    width: 60%;
+    margin: auto;
+    color: whitesmoke;
+    margin-top: 20px;
 }
